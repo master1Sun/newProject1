@@ -1,0 +1,25 @@
+
+<view>
+  <view class="cu-card article card" wx:for="{{dataList1}}" wx:key>
+    <view class="cu-item shadow">
+      <view style='padding:0 30rpx;font-size:30rpx;font-weight:900;'>
+        <view class="text-cut">
+          <text class='text-blue'>
+        {{item.Irank}} 、 {{item.MovieName}}
+        </text>
+        </view>
+      </view>
+      <view class="content">
+        <image src="../../images/noPhoto.png" mode="aspectFill"></image>
+        <view class="desc">
+          <view class="text-content">
+            实时票房（万）: {{item.BoxOffice}}\n\r 累计票房（万）: {{item.sumBoxOffice}}\n\r 票房占比: {{item.boxPer}} \n\r
+          </view>
+          <view>
+            <view class="cu-tag bg-green light sm round">上映天数: {{item.movieDay}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

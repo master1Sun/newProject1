@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/index",
+    "pages/about/about",
+    "pages/storyHappy/storyHappy",
+    "pages/storyHappyInfo/storyHappyInfo",
+    "pages/log/log",
+    "pages/hotMovies/hotMovies",
+    "pages/todayOnhistory/todayOnhistory",
+    "pages/todayOnhistoryInfo/todayOnhistoryInfo",
+    "pages/walkingSteps/walkingSteps"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#39b54a",
+    "navigationBarTitleText": "风与蓝天",
+    "navigationStyle": "default",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "tabBar": {
+    "color": "#aaa",
+    "selectedColor": "#39b54a",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "附近",
+        "iconPath": "/images/map.png",
+        "selectedIconPath": "/images/map_1.png"
+      },
+      {
+        "pagePath": "pages/storyHappy/storyHappy",
+        "text": "趣味",
+        "iconPath": "/images/wo.png",
+        "selectedIconPath": "/images/wo_1.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序定位"
+    }
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wx89d275c9d52ff3de"
+  ],
+  "plugins": {
+    "subway": {
+      "version": "1.0.4",
+      "provider": "wx6aaf93c4435fa1c1"
+    }
+  }
+}

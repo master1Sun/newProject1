@@ -1,0 +1,9 @@
+<view class="content-title" style='{{styles}}'>
+  <view class="content-name">{{name}}</view>
+  <view class="content-line" wx:if="{{name}}"></view>
+  <view class="content-describe">{{describe}}</view>
+  <slot />
+  <view wx:if="{{doc}}" class="doc-container" bindtap="onDoc">
+    <image src='{{image}}' class='doc-img'></image>
+  </view>
+</view>

@@ -1,0 +1,134 @@
+/* pages/myapp/myapp.wxss */
+
+page {
+  background: #f6f6f6;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: flex-start;
+  /* margin: 0 auto; */
+}
+
+.shuru-page {
+  text-align: right;
+  border: 1px solid rgba(240, 237, 237, 0.1);
+}
+
+.shuru-image {
+  width: 25px;
+  height: 20px;
+  margin-top: 5px;
+  margin-right: 8px;
+}
+
+.content-page {
+  height: auto;
+  min-height: 120px;
+  /* width: 100%; */
+  background-color: rgba(243, 243, 243, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 2px;
+}
+
+.content-page-zw {
+  width: 100%;
+  height: auto;
+  max-height: 70%;
+  min-height: 90px;
+}
+
+.content-page-zw-image {
+  width: 90px;
+  height: 25px;
+  margin-top: 2px;
+}
+
+.btnhover {
+  background-color: #10a0ed00;
+  border-radius: 10rpx;
+}
+
+button {
+  display: block;
+  padding-left: 0px;
+  padding-right: 0px;
+  line-height: 10px;
+  background-color: rgba(245, 245, 220, 0);
+  position: absolute;
+  border: 0;
+}
+
+button::after {
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  border: 0;
+  background-color: rgba(245, 245, 220, 0);
+}
+
+.content-page-zw-text {
+  font-size: 15px;
+  padding-left: 5px;
+  display: flex;
+}
+
+.content-page-db {
+  width: auto;
+  height: auto;
+  max-height: 30%;
+  min-height: 30px;
+}
+
+.content-page-db-image {
+  width: 16px;
+  height: 15px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+.content-page-db-wz {
+  font-size: 12px;
+}
+
+.imgAndVideo {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.page {
+  background: #f1f1f1;
+}
+
+.switch-sex::after {
+  content: "\e716";
+}
+
+.switch-sex::before {
+  content: "\e7a9";
+}
+
+.switch-music::after {
+  content: "\e66a";
+}
+
+.switch-music::before {
+  content: "\e6db";
+}
+
+.invert {
+  filter: invert(100%);
+}
+
+.invert avatar tag, .invert [class*="text-"] tag,
+.invert [class*="text-"] [class*="text-"] {
+  filter: invert(0%);
+}
+
+.invert button, .invert tag, .invert image, .invert avatar, .invert switch,
+.invert [class*="text-"] {
+  filter: invert(100%);
+}
+
+.invert list.menu, .invert list.grid {
+  background: #ddd;
+}

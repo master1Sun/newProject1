@@ -1,0 +1,39 @@
+
+
+<view class="page {{skin?' invert ':' '}}">
+  <view style='text-align:center;'>
+    <view class='padding-sm'>
+      <view class="padding-xs">
+        <view class='cu-tag line-red'>{{month}}月{{day}}日</view>
+      </view>
+    </view>
+    <picker-view indicator-style="height: 50px;" style="width: 100%; height: 160px;" value="{{value}}" bindchange="bindChange">
+      <picker-view-column>
+        <view wx:for="{{months}}" style="line-height: 50px">{{item}}月</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{days}}" style="line-height: 50px">{{item}}日</view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+
+  <view class="cu-card case {{isCard?'no-card':''}}" wx:if="{{isShow}}">
+    <view wx:for="{{dataList}}" wx:key class="cu-item shadow" data-list="{{item}}" bindtap="onPreviewSub">
+      <view class='image' style='padding:10px;min-height:30px;line-height:30px;'>
+        <!-- <view class="cu-tag bg-green">{{item.eid}}</view> -->
+        <text>{{item.title}}</text>
+      </view>
+      <view class="cu-list menu menu-avatar">
+        <view class="cu-item">
+          <view class="cu-avatar round lg" style="background-image:url({{item.img}});"></view>
+          <view class='content flex-sub'>
+            <view class='text-grey'>{{item.day}}</view>
+            <view class='text-gray text-sm flex justify-between'>
+              {{item.date}}
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

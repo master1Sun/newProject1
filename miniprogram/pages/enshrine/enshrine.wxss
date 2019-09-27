@@ -1,0 +1,281 @@
+.section {
+  height: 30px;
+  width: 100%;
+}
+
+.section input {
+  width: 90%;
+  margin: 5px auto;
+  border: 1px solid #c3c3c3;
+  height: 30px;
+  border-radius: 3px;
+  padding: 0 5px;
+}
+
+.map_container {
+  position: absolute;
+  top: 42px;
+  bottom: 80px;
+  left: 0;
+  right: 0;
+}
+
+.map {
+  width: 100%;
+  height: 250px;
+}
+
+.map_text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  height: 80px;
+  background: #fff;
+  padding: 0 15px;
+}
+
+text {
+  margin: 0px 0;
+  display: block;
+  font-size: 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.h1 {
+  margin: 15px 0;
+  font-size: 15px;
+}
+
+.doc-container {
+  position: fixed;
+  right: 40rpx;
+  bottom: 60rpx;
+  z-index: 2;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  box-shadow: 0px 3px 8px 0px rgba(155, 193, 185, 0.5);
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  align-items: center;
+}
+
+.doc-img {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.doc-txt {
+  font-size: 28rpx;
+  color: #3963bc;
+  margin-top: 15rpx;
+}
+
+/*时间轴*/
+
+/*外部容器*/
+
+.listview-container {
+  margin: 10rpx 10rpx;
+}
+
+/*行样式*/
+
+.playlog-item {
+  display: flex;
+}
+
+/*时间轴*/
+
+.playlog-item .dotline {
+  width: 35px;
+  position: relative;
+}
+
+/*竖线*/
+
+.playlog-item .dotline .line {
+  width: 1px;
+  height: 100%;
+  background: #ccc;
+  position: absolute;
+  top: 0;
+  left: 15px;
+}
+
+/*圆点*/
+
+.playlog-item .dotline .dot {
+  width: 11px;
+  height: 11px;
+  background: #30ac63;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+}
+
+/*时间戳*/
+
+.playlog-item .dotline .time {
+  width: 100%;
+  position: absolute;
+  margin-top: 30px;
+  z-index: 99;
+  font-size: 12px;
+  color: #777;
+  text-align: center;
+}
+
+/*右侧主体内容*/
+
+.playlog-item .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0px solid #ddd;
+  margin: 3px 0;
+}
+
+/*章节部分*/
+
+.playlog-item .content .chapter {
+  font-size: 30rpx;
+  line-height: 68rpx;
+  color: #444;
+  white-space: normal;
+  padding-right: 10px;
+}
+
+/*课程部分*/
+
+.playlog-item .content .course {
+  font-size: 28rpx;
+  line-height: 56rpx;
+  color: #999;
+}
+.card-dot {
+  width: 18rpx;
+  height: 18rpx;
+  border-radius: 50%;
+  border: 6rpx solid #3963bc;
+  margin-left: 26rpx;
+}
+
+.card-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 750rpx;
+  height: 100rpx;
+}
+
+.content-name {
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(69, 82, 107, 1);
+  line-height: 20px;
+  margin-left: 8px;
+}
+
+.card {
+  margin: 10rpx auto !important;
+}
+
+.right-card {
+  height: 180rpx !important;
+  width: 220rpx !important;
+  border-radius: 12rpx !important;
+}
+
+.content {
+  margin-top: 10rpx;
+  color: #666;
+  font-size: 26rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
+.avter-content {
+  margin-top: 10rpx;
+  color: #333;
+  font-size: 26rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
+.avter-share-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.like-container{
+  display: flex;
+  flex-direction: row;
+  margin-left: 40rpx;
+  align-items: center
+}
+
+.number{
+  color: #666;
+  font-size: 24rpx;
+  margin-left: 12rpx;
+}
+
+
+.coverView {
+  bottom: 25px;
+  position: absolute;
+  right: 5px;
+  background: rgba(235, 235, 235, 0.856);
+  line-height: 0.2;
+}
+
+.coverView cover-image {
+  width: 25px;
+  height: 25px;
+}
+
+/* 搜索框样式 */
+
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 90rpx;
+  background-color: whitesmoke;
+  margin-top: 0%;
+  margin-left: 10px;
+  border: 1rpx solid whitesmoke;
+  border-radius: 5rpx;
+}
+
+/* 搜索框提示文字样式 */
+
+.search input {
+  font-size: 27rpx;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 30rpx;
+}
+
+/* 搜索框小图标 */
+
+.search image {
+  width: 40rpx;
+  height: 40rpx;
+  padding-right: 20rpx;
+}
