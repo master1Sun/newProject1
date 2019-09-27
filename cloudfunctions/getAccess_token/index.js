@@ -23,7 +23,7 @@ exports.main = async(event, context) => {
 async function getSession_key() {
   return await rp({
     method: 'get',
-    url: "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx89d275c9d52ff3de&secret=943fd72bcb743ec6198fcbddd4875d0a",
+    url: "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=appid&secret=秘钥",
     header: {
       'content-type': 'application/json' // 默认值
     },
