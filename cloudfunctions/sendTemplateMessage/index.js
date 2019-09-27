@@ -46,7 +46,7 @@ exports.main = async(event, context) => {
 async function getSession_key(wxContext, event) {
   return await rp({
     method: 'POST',
-    url: "https://api.weixin.qq.com/sns/jscode2session?appid=" + wxContext.APPID + "&secret=20d96d777b184a3295fcc4bf0401bb05&js_code=" + event.code + "&grant_type=authorization_code",
+    url: "https://api.weixin.qq.com/sns/jscode2session?appid=" + wxContext.APPID + "&secret=秘钥&js_code=" + event.code + "&grant_type=authorization_code",
     header: {
       'content-type': 'application/json' // 默认值
     },
