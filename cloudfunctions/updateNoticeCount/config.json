@@ -1,0 +1,9 @@
+{
+  "triggers": [
+    {
+      "name": "myTrigger1234567890",
+      "type": "timer",
+      "config": "59 59 23 * * MON *"
+    }
+  ]
+}
